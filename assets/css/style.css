@@ -30,11 +30,26 @@
 
 }
 
+.debug [class^="col"] {
+    height: 200px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
 
 
 /* #endregion Debug */
 
 /* #region Utilities */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
 .d_flex {
     display: flex;
 }
@@ -91,6 +106,10 @@ a {
     padding-bottom: 2rem;
 }
 
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
 /* Buttons */
 
 .upgrade {
@@ -111,6 +130,7 @@ a {
     width: 230px;
     height: calc(100vh - 90px);
     background-color: var(--sptfy-black);
+    position: fixed;
 }
 
 .topbar {
@@ -125,8 +145,11 @@ a {
 }
 
 .top_site {
-    width: 100%;
+    width: calc(100% - 230px);
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .contents {
@@ -153,3 +176,23 @@ a {
 
 
 /* #endregion Footer */
+
+
+
+/* #region Media */
+
+@media screen and (max-width: 1200px){
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 475px){
+    
+}
+
+/* #endregion Media */
