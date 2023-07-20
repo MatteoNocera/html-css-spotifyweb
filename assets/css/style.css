@@ -19,6 +19,7 @@
 
 body {
     color: var(--sptfy-dark);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* #endregion Common */
@@ -265,6 +266,7 @@ h4 {
     border-radius: 1rem;
     text-align: center;
     line-height: 40px;
+    font-weight: bold;
 }
 
 .upgrade:hover {
