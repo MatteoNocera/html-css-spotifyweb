@@ -8,12 +8,16 @@
     <!-- style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body class="">
 
     <main id="main_site">
         <div class="sidebar">
         </div>
+        
         <div class="top_site">
             <div class="topbar d_flex jc-end ai-center px-2">
                 <button class="upgrade">
@@ -22,71 +26,209 @@
 
             </div>
             <div class="contents p-1">
+                
                 <nav>
-                    <div class="filter pb-2">
-                        <ul class="list_unstiled d_flex jc-center gp-2 gp-md-1 gp-sm-03">
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                            <li>
-                                <a href="">IN EVIDENZA</a>
-                            </li>
-                        </ul>
+                    <div class="filter pb-2 d_flex jc-center fw-w gp-1">
+                        <a href="">IN E<span>VIDE</span>NZA</a>
+                        <a href="">PODCAST</a>
+                        <a href="">CLASSIFICHE</a>
+                        <a href="">GENERI E MOOD</a>
+                        <a href="">NUOVE USCITE</a>
+                        <a href="">SCOPRI</a>
                     </div>
                 </nav>
+                <!-- /nav -->
 
-                <h2>Recently</h2>
+                <section id="recently_played">
 
-                <div class="row py-2">
-                    <div class="col-2 col-md-3 col-sm-6">
-                        <div class="card">
-                            <img src="assets/img/metal_lifting.jpg" alt="">
-                            <h4>Heavy Metal</h4>
-                            <p>Subtitle</p>
+                    <h2>Recently Played</h2>
+
+                    <div class="row">
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/metal_lifting.jpg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+
+                                <h4>Heavy Metal</h4>
+                                <p>Subtitle</p>
+
+                            </div>
                         </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/stranger.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+
+                                <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+                                <div class="album_img">
+                                    <img src="assets/img/aquietplace.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>A quiet place</h4>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/split.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Split</h4>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/cure.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>A cure for wellness</h4>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/sinister.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Sinister</h4>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>                  
+
                     </div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
 
-                </div>
-
-                <h2>Creato</h2>
-                <p>Più ascolti</p>
-
-                <div class="row py-2">
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-
-                </div>
-
-                <h2>Artisti</h2>
-                <p>Più ascolti</p>
-
-                <div class="row py-2">
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-                    <div class="col-2 col-md-3 col-sm-6"></div>
-
-                </div>
-
+                </section>
+                <!-- /#recently_played -->
                 
+                <section id="create_for">
+
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                    <div class="row">
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/radar.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Release Radar</h4>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/mixdaily.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Daily Mix 1</h4>
+                                <p></p>
+                            </div>
+                        </div> 
+
+                    </div>
+
+                </section>
+                <!-- /#create_for -->
+                    
+
+                <section id="popular">
+
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                    <div class="row">
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/youg.jpeg" alt="">>
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Youg</h4>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-md-3 col-sm-6">
+                            <div class="card">
+
+                                <div class="album_img">
+                                    <img src="assets/img/einaudi.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                
+                                <h4>Einaudi</h4>
+                                <p></p>
+                            </div>
+                        </div> 
+
+                    </div>
+
+                </section>
+                <!-- /#popular -->
+
             </div>
 
         </div>
+        <!-- /.top_site -->
+
     </main>
     <!-- /#main_site -->
 

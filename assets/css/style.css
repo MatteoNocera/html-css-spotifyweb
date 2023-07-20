@@ -54,6 +54,10 @@
     display: flex;
 }
 
+.fw-w {
+    flex-wrap: wrap;
+}
+
 .jc-end {
     justify-content: end;
 }
@@ -70,6 +74,10 @@
     gap: 2rem;
 }
 
+.gp-1 {
+    gap: 1rem;
+}
+
 
 /* Style */
 
@@ -82,7 +90,16 @@ a {
 }
 
 h2 {
+    font-size: 2rem;
+}
+
+h2, h4 {
     color: var(--sptfy-white);
+    padding: 0.7rem 0;
+
+}
+
+h4 {
 }
 
 /* Spacing */
@@ -125,6 +142,8 @@ h2 {
 
 /* #region Main */
 
+/* #region Contents */
+
 #main_site {
     height: calc(100vh - 90px);
     display: flex;
@@ -133,7 +152,7 @@ h2 {
 .sidebar {
     width: 230px;
     height: calc(100vh - 90px);
-    background-color: var(--sptfy-black);
+    background-color: red;
     position: fixed;
 }
 
@@ -150,6 +169,10 @@ h2 {
     border: 1px solid var(--sptfy-white);
 }
 
+.upgrade:hover {
+    transform: scale(1.1);
+}
+
 .top_site {
     width: calc(100% - 230px);
     height: 100%;
@@ -162,6 +185,21 @@ h2 {
     height: calc(100vh - 90px - 90px);
     overflow-y: auto;
     background-color: var(--sptfy-principal);
+    color: var(--sptfy-dark);
+}
+
+.filter a {
+    color: var(--sptfy-dark);
+    font-weight: bold;
+}
+
+.filter a:hover {
+    color: var(--sptfy-white);
+}
+
+.filter span {
+    text-decoration: underline var(--sptfy-accent);
+    text-underline-offset: 0.3rem;
 }
 
 .card {
@@ -172,6 +210,41 @@ h2 {
     width: 100%;
 }
 
+.album_img {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #0000007a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay i {
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album_img:hover .overlay {
+    display: inline-block;
+}
+
+.contents [class^="col-"] {
+    padding: 1rem 0.5rem;
+}
+
+#popular .card img, #popular .overlay {
+    border-radius: 50%;
+}
+
+/* #endregion Contents */
 
 
 
@@ -184,7 +257,7 @@ h2 {
 
 #foot_site {
     height: 90px;
-    background-color: var(--sptfy-foot);
+    background-color: yellow;
     
 }
 
@@ -200,27 +273,27 @@ h2 {
     .col-md-3 {
         width: calc(100% / 12 * 3);
     }
-    .filter li {
+    /* .filter li {
         font-size: 0.7rem;
     }
     .gp-md-1 {
         gap: 1rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px){
     .col-sm-6 {
         width: 50%;
     }
-    .filter li {
+    /* .filter li {
         font-size: 0.6rem;
     }
     .gp-sm-03 {
         gap: 0.3rem;
-    }
+    } */
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px){
     .sidebar {
         width: 50px;
     }
