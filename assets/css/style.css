@@ -359,7 +359,8 @@ h4 {
 #foot_site {
     height: 90px;
     background-color: var(--sptfy-foot);
-    
+    position: sticky;
+    z-index: 100;
 }
 
 
