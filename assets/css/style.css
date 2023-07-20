@@ -235,6 +235,7 @@ h4 {
 
 .sidebar hr {
     margin: 1rem 0;
+    border: 1px solid var(--sptfy-dark);
 }
 
 .bottom_menu span {
@@ -361,7 +362,7 @@ h4 {
 
 #foot_site {
     height: 90px;
-    background-color: yellow;
+    background-color: var(--sptfy-foot);
     
 }
 
