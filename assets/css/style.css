@@ -162,12 +162,7 @@ h4 {
     padding-bottom: 2rem;
 }
 
-/* Buttons */
 
-.upgrade {
-    background-color: transparent;
-    border-radius: 1rem;
-}
 
 /* #endregion Utilities */
 
@@ -254,11 +249,6 @@ h4 {
 /* #endregion Sidebar */
 
 
-
-
-
-
-
 /* #region Contents */
 
 .topbar {
@@ -272,6 +262,9 @@ h4 {
     height: 40px;
     color: var(--sptfy-white);
     border: 1px solid var(--sptfy-white);
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 40px;
 }
 
 .upgrade:hover {
@@ -348,6 +341,7 @@ h4 {
 #popular .card img, #popular .overlay {
     border-radius: 50%;
 }
+
 
 /* #endregion Contents */
 
