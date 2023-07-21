@@ -374,6 +374,7 @@ h4 {
     background-color: var(--sptfy-foot);
     position: sticky;
     z-index: 100;
+    font-size: 11px;
 }
 
 .container {
@@ -402,10 +403,6 @@ h4 {
     text-decoration: underline;
 }
 
-.likes {
-    flex-direction: column;
-}
-
 .actions i {
     color: var(--sptfy-white);
 }
@@ -415,41 +412,45 @@ h4 {
 }
 
 .time_bars {
-    width: 30vh;
+    width: 30vw;
 }
 
-.time_listened {
+.time_listened, .volume_on {
     width: 20%;
 }
 
-.time_to_listen {
+.time_to_listen, .volume_to_increase {
     width: 80%;
 }
 
-.time_listened hr, .time_to_listen hr {
+.commands hr, .volume_commands hr {
     width: 100%;
-    display: inline-block;
 }
 
-.time_listened hr {
+.time_listened hr, .volume_on hr {
     border: 2px solid var(--sptfy-white);
 }
 
-.time_listened i {
+.time_listened i, .volume_on i {
     color: var(--sptfy-white);
     display: none;
+    z-index: 10;
 }
 
-.time_listened:hover hr {
+.time_listened:hover hr, .volume_on:hover hr {
     border: 2px solid var(--sptfy-accent);
 }
 
-.time_listened:hover i {
+.time_listened:hover i, .volume_on:hover i {
     display: block;
 }
 
-.time_to_listen hr {
+.time_to_listen hr, .volume_to_increase hr {
     border: 2px solid var(--sptfy-dark);
+}
+
+.volume_bars {
+    width: 10vw;
 }
 
 /* #endregion Footer */
@@ -467,6 +468,16 @@ h4 {
 @media screen and (max-width: 768px){
     .col-sm-6 {
         width: 50%;
+    }
+    .likes {
+    flex-direction: column;
+    gap: 0.5rem;
+    }
+    .container img {
+        width: 2.5rem;
+    }
+    .time_bars {
+        width: 22vw;
     }
 }
 
@@ -488,8 +499,44 @@ h4 {
     .logo_big, .action, .playlist, .sidebar hr, .bottom_menu span {
         display: none;
     }
+    .container img {
+        width: 2rem;
+    }
+    .container h5 {
+        font-size: 0.9rem;
+    }
+    .volume_bars {
+        width: 7vw;
+    }
+    .gp-md-05 {
+        gap: 0.5rem;
+    }
+    .gp-sm-05 {
+        gap: 0.5rem;
+    }
+    .gp-sm-1 {
+        gap: 1rem;
+    }
+    .time_bars {
+        width: 30vw;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
     
+    .time_bars {
+        width: 18vw;
+    }
     
 }
+
+@media screen and (max-width: 400px) {
+    .gp-xs {
+        gap: 0.5rem;
+    }
+}
+
+
 
 /* #endregion Media */

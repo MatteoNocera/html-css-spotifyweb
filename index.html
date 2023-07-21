@@ -402,13 +402,13 @@
     <footer id="foot_site">
         <div class="container d_flex jc-sb">
 
-            <div class="songs d_flex ai-center gp-1">
+            <div class="songs d_flex ai-center gp-1 gp-sm-05 gp-xs">
                 <img src="./assets/img/sinister.jpeg" alt="">
                 <div class="song_details">
                     <h5>Sinister</h5>
                     <a href="#">Brano Nome</a>
                 </div>
-                <div class="likes d_flex gp-05">
+                <div class="likes d_flex gp-1">
                     <a href="#">
                         <i class="fa-regular fa-heart fa-beat"></i>
                     </a>
@@ -420,7 +420,7 @@
             <!-- /.songs -->
 
             <div class="commands d_flex fd-c jc-sb">
-                <div class="actions d_flex jc-center ai-center gp-2">
+                <div class="actions d_flex jc-center ai-center gp-2 gp-sm-1 gp-xs">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <a href="#">
@@ -431,11 +431,11 @@
 
                 </div>
 
-                <div class="time d_flex ai-center gp-1">
+                <div class="time d_flex ai-center gp-1 gp-xs">
                     <div class="listened">
                         0.25
                     </div>
-                    <div class="time_bars ai-center">
+                    <div class="time_bars">
                         <a class="d_flex ai-center" href="#">
                             <div class="time_listened d_flex ai-center">
                                 <hr>
@@ -452,7 +452,25 @@
             </div>
             <!-- /.commands -->
 
-            <div class="volume_commands"></div>
+            <div class="volume_commands d_flex ai-center gp-1 gp-md-05 gp-xs">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                
+                <div class="volume_bars">
+                    <a class="d_flex ai-center" href="#">
+                        <div class="volume_on d_flex ai-center">
+                            <hr>
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+
+                        </div>
+                        <div class="volume_to_increase d_flex">
+                            <hr>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
             <!-- /.volume_commands -->
 
         </div>
