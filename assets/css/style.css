@@ -304,10 +304,14 @@ h4 {
 
 .card {
     text-align: center;
+    background-color: var(--sptfy-black);
+    border-radius: 1rem;
 }
 
 .card img {
-    width: 100%;
+    width: 80%;
+    border-radius: 1rem;
+    margin-top: 5px;
 }
 
 .album_img {
@@ -322,6 +326,7 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 1rem;
 }
 
 .overlay i {
@@ -342,6 +347,10 @@ h4 {
 
 #popular .card img, #popular .overlay {
     border-radius: 50%;
+}
+
+.card:hover {
+    transform: scale(1.05);    
 }
 
 
