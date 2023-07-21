@@ -63,6 +63,10 @@ body {
     flex-wrap: wrap;
 }
 
+.fd-c {
+    flex-direction: column;
+}
+
 .jc-end {
     justify-content: end;
 }
@@ -373,7 +377,7 @@ h4 {
 }
 
 .container {
-    padding: 1rem;
+    padding: 1.2rem 1rem;
     height: 100%;
 }
 
@@ -386,7 +390,7 @@ h4 {
     font-size: 1.3rem;
 }
 
-.container a {
+.songs a {
     color: var(--sptfy-dark);
 }
 
@@ -402,6 +406,51 @@ h4 {
     flex-direction: column;
 }
 
+.actions i {
+    color: var(--sptfy-white);
+}
+
+#play_song:hover {
+    transform: scale(1.1);
+}
+
+.time_bars {
+    width: 30vh;
+}
+
+.time_listened {
+    width: 20%;
+}
+
+.time_to_listen {
+    width: 80%;
+}
+
+.time_listened hr, .time_to_listen hr {
+    width: 100%;
+    display: inline-block;
+}
+
+.time_listened hr {
+    border: 2px solid var(--sptfy-white);
+}
+
+.time_listened i {
+    color: var(--sptfy-white);
+    display: none;
+}
+
+.time_listened:hover hr {
+    border: 2px solid var(--sptfy-accent);
+}
+
+.time_listened:hover i {
+    display: block;
+}
+
+.time_to_listen hr {
+    border: 2px solid var(--sptfy-dark);
+}
 
 /* #endregion Footer */
 
@@ -439,6 +488,7 @@ h4 {
     .logo_big, .action, .playlist, .sidebar hr, .bottom_menu span {
         display: none;
     }
+    
     
 }
 
